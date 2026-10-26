@@ -1,0 +1,55 @@
+ .q03-panel {
+     background: #fff;
+     border: 1px solid #dce5f0;
+     border-radius: 20px;
+     padding: 28px;
+     box-shadow: 0 12px 36px #1933530a
+ }
+
+ .q03-panel>h2 {
+     margin: 0 0 24px;
+     font-size: 1.25rem
+ }
+
+ .q03-grid {
+     display: grid;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 16px
+ }
+
+ .q03-stat-card {
+     border: 1px solid #e1e8f3;
+     background: #f8fbff;
+     border-radius: 14px;
+     padding: 24px
+ }
+
+ .q03-stat-card h3 {
+     color: #6d7a90;
+     font-size: .95rem;
+     font-weight: 600;
+     margin: 0 0 18px
+ }
+
+ .q03-stat-card p {
+     font-size: 2.6rem;
+     font-weight: 800;
+     margin: 0;
+     color: #172b4b
+ }
+
+ @media(max-width:720px) {
+     .q03-grid {
+         grid-template-columns: repeat(2, minmax(0, 1fr))
+     }
+ }
+
+ @media(max-width:440px) {
+     .q03-grid {
+         grid-template-columns: 1fr
+     }
+
+     .q03-panel {
+         padding: 18px
+     }
+ }

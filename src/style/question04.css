@@ -1,0 +1,84 @@
+ .q04-grid {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     gap: 20px
+ }
+
+ .q04-frame {
+     background: #fff;
+     border: 1px solid #dce5f0;
+     border-radius: 18px;
+     overflow: hidden;
+     box-shadow: 0 10px 30px #1933530a
+ }
+
+ .q04-frame-header {
+     background: #f8fbff;
+     border-bottom: 1px solid #e8edf5;
+     padding: 22px 24px
+ }
+
+ .q04-frame-header h2 {
+     font-size: 1.3rem;
+     margin: 0 0 6px
+ }
+
+ .q04-frame-header p {
+     margin: 0;
+     color: #728097
+ }
+
+ .q04-frame-body {
+     padding: 22px 24px
+ }
+
+ .q04-frame-body>p {
+     color: #51627b;
+     line-height: 1.7;
+     margin: 0
+ }
+
+ .q04-info-row {
+     display: flex;
+     justify-content: space-between;
+     gap: 12px;
+     padding: 10px 0;
+     border-bottom: 1px solid #edf1f6
+ }
+
+ .q04-info-row span {
+     color: #64748b
+ }
+
+ .q04-card-footer {
+     margin-top: 22px
+ }
+
+ .q04-badge {
+     display: inline-block;
+     border-radius: 999px;
+     padding: 7px 12px;
+     font-size: .78rem;
+     font-weight: 800
+ }
+
+ .q04-badge--blue {
+     color: #1d4ed8;
+     background: #dbeafe
+ }
+
+ .q04-badge--green {
+     color: #15803d;
+     background: #dcfce7
+ }
+
+ .q04-badge--orange {
+     color: #c2410c;
+     background: #ffedd5
+ }
+
+ @media(max-width:680px) {
+     .q04-grid {
+         grid-template-columns: 1fr
+     }
+ }
