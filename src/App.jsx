@@ -3,7 +3,21 @@ import Question03 from "./questions/question03/Question03.jsx";
 import Question04 from "./questions/question04/Question04.jsx";
 import Question05 from "./questions/question05/Question05.jsx";
 import Question06 from "./questions/question06/Question06.jsx";
+import Question01 from "./questions/question01/Question01.jsx";
+import Question02 from "./questions/question02/Question02.jsx";
 const exercises = [
+  {
+    id: "01",
+    title: "Assigned Tickets",
+    description: "Track Ahmad’s ticket workload with state and controls.",
+    component: Question01,
+  },
+  {
+    id: "02",
+    title: "Expandable Tickets",
+    description: "Open independent ticket details using component state.",
+    component: Question02,
+  },
   {
     id: "03",
     title: "Statistics Dashboard",
@@ -36,9 +50,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <button className="brand">
-            Dashboard For 4 React Questions
-        </button>
+        <button className="brand">Dashboard For 6 React Questions</button>
         <span>Sessions 01 &amp; 02</span>
       </header>
       <main className="main-container">
@@ -48,7 +60,9 @@ export default function App() {
               <button className="back-button" onClick={() => setSelected(null)}>
                 ← All exercises
               </button>
-              <span className="eyebrow">QUESTION {selected} / {selected}</span>
+              <span className="eyebrow">
+                QUESTION {selected} / {selected}
+              </span>
             </div>
             <Current />
           </>
@@ -58,7 +72,7 @@ export default function App() {
               <span className="eyebrow">REACT / PRACTICE</span>
               <h1>Choose an exercise</h1>
               <p>
-                Four independent React assignments in one project. Select a
+                Six independent React assignments in one project. Select a
                 question to explore its output.
               </p>
             </section>
@@ -81,7 +95,7 @@ export default function App() {
         )}
       </main>
       <footer className="site-footer">
-        React Practice · Questions 03-04-05-06
+        React Practice · Questions 01-02-03-04-05-06
       </footer>
     </div>
   );

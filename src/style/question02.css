@@ -1,0 +1,83 @@
+.q02-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px
+}
+
+.q02-ticket {
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 7px 24px #11223e0a
+}
+
+.q02-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: start
+}
+
+.q02-id {
+    font-size: .8rem;
+    color: #64748b
+}
+
+.q02-summary h2 {
+    font-size: 1.15rem;
+    margin: 9px 0 20px;
+    overflow-wrap: anywhere
+}
+
+.q02-status {
+    font-size: .76rem;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 6px 10px;
+    white-space: nowrap
+}
+
+.q02-status-open {
+    background: #dbeafe;
+    color: #1d4ed8
+}
+
+.q02-status-pending {
+    background: #ffedd5;
+    color: #c2410c
+}
+
+.q02-status-closed {
+    background: #dcfce7;
+    color: #15803d
+}
+
+.q02-toggle {
+    background: #112d50;
+    border: 0;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 700
+}
+
+.q02-details {
+    border-top: 1px solid #e2e8f0;
+    margin-top: 18px;
+    padding-top: 12px;
+    line-height: 1.7;
+    overflow-wrap: anywhere
+}
+
+.q02-details p {
+    margin: 8px 0
+}
+
+@media(max-width:950px) {
+    .q02-grid {
+        grid-template-columns: 1fr
+    }
+}
