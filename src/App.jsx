@@ -51,7 +51,7 @@ export default function App() {
     <div className="app-shell">
       <header className="topbar">
         <button className="brand">Dashboard For 6 React Questions</button>
-        <span>Sessions 01 &amp; 02</span>
+        <span>Ahmad AbuNijim</span>
       </header>
       <main className="main-container">
         {Current ? (
